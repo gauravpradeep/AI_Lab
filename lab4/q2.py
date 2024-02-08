@@ -34,7 +34,7 @@ class Graph:
                     visited.add(neighbor)
                 elif neighbor != parent:
                     # Detected a back edge, indicating a cycle
-                    print(f"Cycle detected: {neighbor} -> {current_node}")
+                    print(f"Cycle detected at {neighbor}")
                     return True
 
         return False
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     g.add_edge(0, 2)
     g.add_edge(1, 2)
     g.add_edge(2, 3)
-    # g.add_edge(2, 0)
+    g.add_edge(2, 0)
 
     if g.has_cycle():
         print("Graph has a cycle.")
