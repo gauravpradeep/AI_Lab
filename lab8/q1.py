@@ -41,7 +41,7 @@ def solve_cryptarithmetic(puzzle):
 
 # Example usage:
 def main():
-    puzzle = ["MIT", "MANIPAL", "MITMAHE"]
+    puzzle = ["SEND", "MORE", "MONEY"]
     solve_cryptarithmetic(puzzle)
 
 if __name__ == '__main__':
